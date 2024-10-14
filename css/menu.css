@@ -1,0 +1,81 @@
+.menu-tab {
+  width: 35px;
+  height: 35px;
+  position: fixed;
+  z-index: 100;
+  right: 5%;
+  cursor: pointer;
+  transition: all 0.6s ease-in-out;
+}
+.menu-tab div {
+  width: 30px;
+  height: 3px;
+  background-color: #1a1a1a; /*hamburger color*/
+  display: block;
+  margin: 5px;
+  transition: all 0.6s ease-in-out;
+}
+
+/*end of menu-tab*/
+.menu-tab.active {
+  transition: all 600ms ease-in-out;
+  background-color: transparent; /*x background color*/
+}
+.menu-tab.active #one {
+  transform: translateY(8px) rotate(-135deg);/* \ */
+  transition: all 0.6s ease-in-out;
+  background-color: #1a1a1a;
+}
+.menu-tab.active #two {
+  opacity: 0;
+  transition: 0.4s ease;
+}
+.menu-tab.active #three {
+  transform: translateY(-8px) rotate(-45deg);/* / */
+  transition: all 0.6s ease-in-out;
+  background-color: #1a1a1a;
+}
+
+
+.menu-hide {
+  width: 600px;
+  padding-left: 50px;
+  right: -650px;
+  height: 30px;
+  position: fixed;
+  z-index: 10;
+  transition: all 0.6s ease-in-out;
+}
+.menu-hide nav div .li {
+  list-style-type: none;
+  text-align: center;
+  transition: all 0.5s ease;
+  float: left;
+}
+
+.menu-hide nav div .li a {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-family: "GT-America-Expanded-Medium";	
+  font-size:16px;
+  font-weight:auto;
+  color: #1a1a1a;
+}
+
+.menu-hide nav div .li a:hover {
+  color: #6D6F71;
+}
+/*end of menu-hide*/
+
+.menu-hide.show {
+  z-index: 9999;
+  right: 110px;
+  background-color: #ececed;
+  transition: all 0.6s ease-in-out;
+}
+
+@media screen and (max-width: 800px) {
+.menu-hide{
+	width: 80%;
+}
+}
