@@ -1,0 +1,105 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>Micaela Benedicto Studio</title>
+  <link rel="icon" type="image/png" href="img/icon.png" />
+
+
+<!--------Style Sheets------->
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-responsive.css">  
+  <link rel="stylesheet" href="css/skippr.css">
+  <link rel="stylesheet" href="css/skippr-style.css">
+  <link rel="stylesheet" href="css/menu.css">
+ 
+</head>
+
+<body>
+
+
+<!------------Header------------>
+
+<header id="fullscreen">
+    
+     <div class="logo" id="full">
+      <a href="index.html">
+     MICAELA BENEDICTO <font color="6D6F71">STUDIO</font>
+      </a>
+     </div>
+
+
+<div class="menu-tab">
+    <div id="one"></div>
+    <div id="two"></div>
+    <div id="three"></div>
+</div>
+    
+<div class="menu-hide">
+  <nav>
+    <div>
+      <div class="li"><a href="architecture.html">ARCHITECTURE</a></div>
+      <div class="li"><a href="art.html">ART</a></div>
+      <div class="li"><a href="about.html">ABOUT</a></div>
+      <div class="li"><a href="press.html">PRESS</a></div>
+    </div>
+  </nav>
+</div>
+
+       
+</header>
+
+<div class="clear"></div>
+
+<!----------------SLIDESHOW------------------->
+
+<div class="hero">
+
+<div id="slide">
+
+<div style="background-image: url(img/hero5.jpg)"><a href="architecture/z-house.html"></a></div>
+<div style="background-image: url(img/hero2.jpg)"><a href="architecture/kodama-house-and-studio.html"></a></div>
+<div style="background-image: url(img/hero1.jpg)"><a href="architecture/z-house.html"></a></div>
+<div style="background-image: url(img/hero3.jpg)"><a href="architecture/descending-house.html"></a></div>
+<div style="background-image: url(img/hero4.jpg)"><a href="architecture/inward-house.html"></a></div>
+<div style="background-image: url(img/hero6.jpg)"><a href="architecture/fully-booked-flagship-store.html"></a></div>
+<div style="background-image: url(img/hero7.jpg)"><a href="architecture/lanai-house.html"></a></div>
+<div style="background-image: url(img/hero9.jpg)"><a href="architecture/parallel-house.html"></a></div>
+
+</div>
+
+</div>
+<div class="clear"></div>
+
+<!------------Footer------------> 
+ 
+<div class="footer-container">       
+    <div class="footer">MICAELA BENEDICTO © 2024</div>
+</div>
+
+<!----------SCRIPTS------------>
+<script src="js/jquery.min.js"></script>
+<script src="js/skippr.js"></script>
+<script src="js/menu.js"></script>
+
+
+
+<!----------SLIDESHOW SCRIPT------------>
+
+<script>
+$(document).ready(function() {
+                $("#slide").skippr({
+                    autoPlay : true,
+                    autoPlayDuration : 5000,
+                    logs : true
+                });
+            });
+			
+</script>  
+ 
+</body>
+</html>
