@@ -106,6 +106,15 @@
 	line-height: 16px;
 }
 
+.column a{
+	float: left;
+	color: #1a1a1a;
+}
+
+.column a:hover{
+	color: #6D6F71;
+}
+
 .column img{
 	float: left;
 	margin-right: 5px;
